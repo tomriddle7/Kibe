@@ -44,6 +44,7 @@ class MainPageState extends State<Page2> {
         centerTitle: true,
       ),
       body: new ListView.builder(
+        itemCount: _response.length,
         itemBuilder: (context, index) {
           return new Card(
             child: ListTile(

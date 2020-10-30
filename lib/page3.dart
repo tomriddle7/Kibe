@@ -71,7 +71,7 @@ class MainPageState extends State<Page3> {
 
     var response = await http.get(apiUrl.toString());
     String responseBody = response.body;
-    print('res >> $responseBody');
+    // print('res >> $responseBody');
 
     Map<String, dynamic> json = jsonDecode('$responseBody');
 

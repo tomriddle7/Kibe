@@ -73,6 +73,7 @@ class MainPageState extends State<Detail> {
         centerTitle: true,
       ),
       body: new ListView.builder(
+        itemCount: _response.length,
         itemBuilder: (context, index) {
           return new Card(
             child: ListTile(
